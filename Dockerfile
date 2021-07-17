@@ -68,3 +68,5 @@ RUN curl https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - \
         vim \
         sudo \
     && rm -rf /var/lib/apt/lists/* 
+
+RUN echo 'ubuntu ALL=(ALL) ALL' >> /etc/sudoers
